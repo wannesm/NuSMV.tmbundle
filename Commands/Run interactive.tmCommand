@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>saveActiveFile</string>
+	<key>command</key>
+	<string>#!/usr/bin/env bash
+
+exec osascript &lt;&lt;EOF
+tell application "Terminal"
+	activate
+	do script "NuSMV -int $TM_FILEPATH"
+end tell
+EOF
+</string>
+	<key>input</key>
+	<string>document</string>
+	<key>keyEquivalent</key>
+	<string>@R</string>
+	<key>name</key>
+	<string>Run interactive</string>
+	<key>output</key>
+	<string>showAsTooltip</string>
+	<key>scope</key>
+	<string>source.nusmv</string>
+	<key>uuid</key>
+	<string>3A3C0E76-860F-469D-82C3-3ED1AEF2F858</string>
+</dict>
+</plist>

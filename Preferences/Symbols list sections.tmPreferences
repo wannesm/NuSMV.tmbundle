@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>name</key>
+	<string>Symbols list sections</string>
+	<key>scope</key>
+	<string>meta.function.section.nusmv</string>
+	<key>settings</key>
+	<dict>
+		<key>showInSymbolList</key>
+		<integer>1</integer>
+		<key>symbolTransformation</key>
+		<string>
+      s/^(\s*)/    /g;          # indent
+   </string>
+	</dict>
+	<key>uuid</key>
+	<string>86C535DC-BF2F-42C2-99D2-0DAE21E9129B</string>
+</dict>
+</plist>
